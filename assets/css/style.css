@@ -1,0 +1,742 @@
+body{
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/**********************************************index.html**********************************************************/
+header {
+    padding: 30px 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 190px;
+}
+
+header h1{
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 47px;
+    color: #911C1C;
+}
+/*******corps de page******/
+main img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 30px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 358px;
+    text-align: center;
+}
+main .block-take{
+    text-align: center;
+}
+main .block h1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    color: #d3573c;
+    margin-top: 10px;
+}
+main h3{
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #d3573c;
+}
+main p{
+    font-family: "DM Sans", sans-serif;
+    margin:0;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    color: #000000;
+}
+main .text-1{
+    margin-top: 4px;
+    color: gray;
+    font-size: 9px;
+}
+main {
+    font-family: "DM Sans", sans-serif;
+}
+
+/******************mimi_keel.html, rose.html, galindo.html, dubois.html, marcenikolic.html, bradford.html*************/
+
+/**********premiere-partie**********/
+#premiere-partie{
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    height: 313px;
+    margin-left: 95px;
+    margin-right: 95px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.mimi-keel h1{
+    font-size: 60px;
+    color: #D3573C;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 83px;
+    margin-left: 0;
+}
+.mimi-keel h3{
+    font-size: 24px;
+    color:#901C1C;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: -20px;
+    line-height: 31px;
+    font-weight: 400;
+    font-style: normal;
+}
+.mimi-keel p{
+    font-size: 16px;
+    line-height: 23px;
+    color: #525252;
+    font-weight: 400!important;
+}
+/****contact****/
+.contact button {
+    width: 165px;
+    height: 65px;
+    background-color: #901c1c;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 26px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+input {
+    width: 100%;
+    height: 68px;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+input .email{
+    padding: 30px;
+}
+
+.contact .w3-modal-content{
+    background-color: #d3573c;
+    width: 600px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+.contact h2{
+    font-size: 64px;
+
+}
+.contact span{
+    color: #fafafa;
+    font-size: 73px;
+    margin-top: 0;
+    margin-right: 5px;
+}
+.contact .submit{
+    width: 20%;
+}
+.contact form{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+}
+/***images****/
+.images{
+    text-align: right;
+}
+.images img{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+/***************/
+#select{
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+/* Style de base du menu */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+/* Style du menu déroulant */
+ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#901C1C;
+    padding: 0;
+    z-index: 1;
+}
+ul li:hover > ul {
+    display: block;
+}
+/* Style des liens dans le menu */
+ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+
+}
+/* Style de la flèche */
+.arrow::before {
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid #333;
+    vertical-align: middle;
+}
+
+.selected span{
+    margin-left: 30px;
+}
+.selected{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+.selected .liste{
+    background-color: #901C1C;
+    border-radius: 3px;
+}
+hr{
+    width: 90%;
+    margin-left: 7px!important;
+}
+/******paragraph*****/
+#photograph {
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 79px;
+    row-gap: 30px;
+}
+#photograph .picture-items img {
+    cursor: pointer;
+    width: 100%!important;
+    height: 360px !important;
+    border-radius: 5px;
+}
+#photograph .description{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+#photograph a{
+    text-decoration: none;
+}
+#photograph .picture-items span{
+    font-size: 24px;
+    line-height: 31px;
+}
+#photograph b{
+    font-size: 23px;
+    line-height: 31px;
+    font-weight: 400;
+}
+/************/
+#foot{
+    display: flex!important;
+    height: 69px;
+    width: 376px;
+    border-radius: 5px;
+    justify-content: space-between!important;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #DB8876;;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#foot .sp-p{
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 500;
+
+}
+#foot{
+    display: block;
+    justify-content: flex-start;
+}
+#foot-page{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+/* **************modal**************** */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffff;
+  }
+  .modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+  }
+.modal-content .close {
+    position: absolute;
+    top: -70px;
+    right: 20px;
+    font-size: 55px!important;
+    font-weight: bold;
+    cursor: pointer;
+}
+  .prev {
+    position: relative;
+    right: 45px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #901c1c;
+  }
+
+  .next {
+    position: relative;
+    left: 45px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #901c1c;
+  }
+  .slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 415px;
+  }
+  .mySlides {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .modal .mySlides img {
+      width: 100%!important;
+      height: 80vh!important;
+      border-radius: 0;
+  }
+.myModal-close {
+    position: relative;
+    top: 20px;
+    margin: 0px 195px;
+    height: 90%;
+}
+  .myModal-close .close {
+      display: flex!important;
+      justify-content: flex-end!important;
+      font-size: 50px;
+      color: rgb(144, 28, 28);
+      cursor: pointer;
+      left: 45px;
+      position: relative;
+      top: 45px;
+  }
+/**********************************************responsive de l'index.html***********************************************/
+@media screen and (max-width: 1116px) {
+    header img {
+        margin-left: 45px!important;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    main {
+        column-gap: 45px;
+    }
+}
+@media screen and (max-width: 1046px) {
+    main img {
+        width: 190px;
+        height: 190px;
+    }
+    main .block h1 {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 1000px){
+    main {
+        column-gap: 50px;
+    }
+}
+@media screen and (max-width: 920px) {
+    header img {
+        margin-left: 25px!important;
+    }
+    main img {
+        width: 180px;
+        height: 180px;
+    }
+    main .block h1 {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 820px) {
+    header img {
+        margin-left: 0!important;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 30px;
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns:  1fr;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    main img {
+        width: 200px;
+        height: 200px;
+    }
+    main .block h1 {
+        font-size: 33px;
+    }
+}
+@media screen and (max-width: 380px) {
+    header h1 {
+        font-size: 27px;
+    }
+    main img {
+        width: 190px;
+        height: 190px;
+    }
+    main .block h1 {
+        font-size: 30px;
+    }
+    header {
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 300px) {
+    header h1 {
+        font-size: 25px;
+    }
+    main img {
+        width: 180px;
+        height: 180px;
+    }
+    main .block h1 {
+        font-size: 27px;
+    }
+
+    main img {
+        width: 165px;
+        height: 165px;
+    }
+}
+@media screen and (max-width: 250px) {
+    main img {
+        width: 165px;
+        height: 165px;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+    main .block h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    header img {
+        width: 160px;
+    }
+    header h1 {
+        font-size: 21px;
+    }
+}
+
+/******responsive de mimi_keel.html, rose.html, galindo.html, dubois.html, marcenikolic.html, bradford.html**********/
+
+@media screen and (max-width: 1116px) {
+    #premiere-partie {
+        margin-left: 73px;
+        margin-right: 73px;
+    }
+    #photograph {
+         margin-left: 0px;
+         margin-right: 0px;
+        margin-top: 30px;
+        column-gap: 30px!important;
+        row-gap: 30px;
+        padding: 36px 77px;
+    }
+    #photograph img {
+        width: 100%;
+        text-align: center;
+    }
+    #premiere-partie {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #select {
+        margin-left: 76px;
+    }
+}
+@media screen and (max-width: 1009px) {
+    .mimi-keel h1 {
+        font-size: 48px;
+    }
+    .images img {
+        width: 180px;
+        height: 180px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .mimi-keel h1 {
+        font-size: 46px;
+        color: #D3573C;
+        font-family: 'DM Sans', sans-serif;
+         margin-bottom: 0px;
+        margin-top: 0;
+        font-weight: 400;
+        line-height: 83px;
+    }
+    .mimi-keel h3 {
+        font-size: 24px;
+         margin-top: 0px;
+    }
+    #premiere-partie {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    #photograph {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        column-gap: 50px!important;
+        row-gap: 30px;
+        padding: 36px 56px;
+    }
+    .images img {
+        width: 170px;
+        height: 170px;
+    }
+    .contact button {
+        width: 150px;
+        height: 60px;
+        font-size: 16px;
+    }
+    .mimi-keel h3 {
+        font-size: 22px;
+    }
+    .mimi-keel p {
+        font-size: 15px;
+    }
+    #select {
+        margin-left: 57px;
+    }
+}
+@media screen and (max-width: 820px){
+    #premiere-partie {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    #select {
+        margin-left: 34px;
+    }
+    #photograph {
+        padding: 36px 33px;
+    }
+}
+@media screen and (max-width: 765px){
+    .mimi-keel h1 {
+        font-size: 40px;
+    }
+    .images img {
+        width: 155px;
+        height: 155px;
+    }
+    .mimi-keel p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 710px){
+    .images img {
+        width: 140px;
+        height: 140px;
+    }
+    .mimi-keel p {
+        font-size: 12px;
+    }
+    .mimi-keel h3 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 705px){
+    #premiere-partie{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        text-align: center;
+    }
+    .images img {
+        margin-top: 40px;
+        width: 190px;
+        height: 190px;
+    }
+    .mimi-keel h1 {
+        font-size: 60px;
+    }
+    .contact button {
+        width: 165px;
+        height: 65px;
+        font-size: 17px;
+        margin-left: 0!important;
+    }
+    .mimi-keel h3 {
+        font-size: 26px;
+    }
+    .mimi-keel p {
+        font-size: 16px;
+    }
+    #photograph {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 36px 33px;
+    }
+    #photograph img {
+        width: 100%;
+        height: 470px !important;
+    }
+}
+@media screen and (max-width: 440px) {
+    .mimi-keel h1 {
+        font-size: 50px;
+    }
+    .mimi-keel h3 {
+        font-size: 22px;
+    }
+    .images img {
+        width: 180px;
+        height: 180px;
+    }
+    .mimi-keel p {
+        font-size: 14px;
+    }
+    #foot {
+        display: none!important;
+    }
+    .selected {
+        gap: 13px;
+    }
+
+}
+@media screen and (max-width: 380px) {
+    header img {
+        margin-left: 20px!important;
+    }
+    #premiere-partie {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #photograph {
+        padding: 36px 20px;
+    }
+    #select {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .mimi-keel h1 {
+        font-size: 45px;
+    }
+    #photograph span {
+        font-size: 20px;
+    }
+    #photograph b {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 316px){
+    .mimi-keel h1 {
+        font-size: 35px;
+    }
+    .mimi-keel h3 {
+        font-size: 20px;
+    }
+    #premiere-partie {
+        padding-left: 0;
+        padding-right: 0;
+        height: 460px;
+    }
+    .images img {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 316px){
+    ul li a {
+        width: 128px;
+    }
+}

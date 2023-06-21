@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>mimi_keel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="images/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="head">
+    <a href="#">
+        <img src="assets/images/logo-Fisheye.png" alt="logo de Fisheye">
+    </a>
+</header>
+
+<main>
+    <div id="premiere-partie">
+        <div class="mimi-keel">
+            <h1>Mimi Keel</h1>
+            <h3>London, UK</h3>
+            <p>Voir le beau dans le quotidien</p>
+        </div>
+        <div class="contact">
+            <div class="w3-container button1">
+                <button onclick="document.getElementById('id03').style.display='block'" class=" w3-#901c1c">Contactez-moi</button>
+
+                <div id="id03" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">x</span>
+                            <h2>Contactez-moi <br> Mimi keel</h2>
+                            <form action="">
+                                <label for="fname">Prénom</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="lname">Nom</label><br>
+                                <input type="text" id="lname" name="lname"><br><br>
+                                <div style="margin-top: -46px">
+                                    <label class="email" for="E-mail">Email</label><br>
+                                    <input type="email" id="E-mail" name="E-mail"><br><br>
+                                </div>
+                                <div style="margin-top: -46px;" >
+                                    <label for="mess">Votre message</label><br>
+                                    <input style="height: 170px" type="text" id="mess" name="mess"><br><br>
+                                </div>
+                                <div style="margin-top: -46px" class="submit">
+                                    <button>Envoyer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="images">
+            <img src="assets/images/mimi-keel.png" alt="mimi keely">
+        </div>
+    </div>
+    <!--    *********select*******-->
+    <section id="select">
+        <div class="selected">
+            <div>Trier par </div>
+            <div class="liste">
+                <ul>
+                    <li>
+                        <a href="#">Popularité <span class="arrow"></span></a>
+                        <ul>
+                            <hr>
+                            <li><a href="#">Date</a></li>
+                            <hr>
+                            <li><a href="#">Titre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--photograph-->
+    <section id="photograph">
+        <div class="picture-items">
+            <img src="assets/images/thumb-img-oiseau.png" onclick="openModal();currentSlide(1)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Travel_Lonesome.jpg" onclick="openModal();currentSlide(2)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/thumb-img-Mariage.png" onclick="openModal();currentSlide(3)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Portrait_Background.jpg" onclick="openModal();currentSlide(4)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Event_PintoWedding.jpg" onclick="openModal();currentSlide(5)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Event_BenevidesWedding.jpg" onclick="openModal();currentSlide(6)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Portrait_Nora.jpg" onclick="openModal();currentSlide(7)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Portrait_Wednesday.jpg" onclick="openModal();currentSlide(8)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Event_BenevidesWedding.jpg" onclick="openModal();currentSlide(9)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <div class="picture-items">
+            <img src="assets/images/Portrait_Wednesday.jpg" onclick="openModal();currentSlide(10)" alt="">
+            <div class="title-picture">
+                <div class="description">
+                    <span>Arc-en-ciel</span>
+                    <b>11 ❤</b>
+                </div>
+            </div>
+        </div>
+        <!-- openModal -->
+        <div id="myModal" class="modal">
+            <div class="myModal-close">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="mySlides">
+                    <div class="numbertext">Arc-en-ciel</div>
+                    <img src="assets/images/thumb-img-oiseau.png" alt="">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">Arc-en-ciel</div>
+                    <img src="assets/images/thumb-img-Mariage.png" alt="">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">Arc-en-ciel</div>
+                    <img src="assets/images/mimi-keel.png" alt="">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">Arc-en-ciel</div>
+                    <img src="assets/images/thumb-img-oiseau.png" alt="">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">Arc-en-ciel</div>
+                    <img src="assets/images/thumb-img-Mariage.png" alt="">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">Arc-en-ciel</div>
+                    <img src="assets/images/mimi-keel.png" alt="">
+                </div>
+                <!-- slide -->
+                <div class="slide">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--pied de page-->
+    <footer id="foot-page">
+        <div id="foot">
+            <div class="sp-p"><span>297 081❤</span> </div>
+            <div  class="sp-p"> <p>300€/jour</p> </div>
+        </div>
+    </footer>
+</main>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
