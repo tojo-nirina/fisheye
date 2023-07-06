@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
 }
-/**********************************************index.html**********************************************************/
+/************index.html**********/
 header {
     padding: 30px 85px;
     display: flex;
@@ -242,6 +242,7 @@ ul li a {
     border-radius: 3px;
 }
 hr{
+    margin: 0!important;
     width: 90%;
     margin-left: 7px!important;
 }
@@ -266,6 +267,7 @@ hr{
     justify-content: space-between;
     font-size: 1.25em;
     text-decoration: none;
+    color: #901C1C;
 }
 #photograph a{
     text-decoration: none;
@@ -383,7 +385,7 @@ hr{
       position: relative;
       top: 45px;
   }
-/**********************************************responsive de l'index.html***********************************************/
+/************responsive de l'index.html*************/
 @media screen and (max-width: 1116px) {
     header img {
         margin-left: 45px!important;
@@ -518,7 +520,7 @@ hr{
     }
 }
 
-/******responsive de mimi_keel.html, rose.html, galindo.html, dubois.html, marcenikolic.html, bradford.html**********/
+/******responsive de mimi_keel.html**********/
 
 @media screen and (max-width: 1116px) {
     #premiere-partie {
