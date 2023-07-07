@@ -82,8 +82,6 @@ main {
     font-family: "DM Sans", sans-serif;
 }
 
-/******************mimi_keel.html, rose.html, galindo.html, dubois.html, marcenikolic.html, bradford.html*************/
-
 /**********premiere-partie**********/
 #premiere-partie{
     background-color: #fafafa;
@@ -339,30 +337,40 @@ hr{
     cursor: pointer;
 }
   .prev {
-    position: relative;
-    right: 45px;
-    cursor: pointer;
-    font-size: 40px;
-    color: #901c1c;
+      position: relative;
+      right: 45px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 40px;
+      color: #901c1c;
   }
 
   .next {
-    position: relative;
-    left: 45px;
-    cursor: pointer;
-    font-size: 40px;
-    color: #901c1c;
+      position: relative;
+      transform: translateY(-50%);
+      left: 45px;
+      cursor: pointer;
+      font-size: 40px;
+      color: #901c1c;
   }
   .slide {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    bottom: 415px;
+      position: absolute;
+      transform: translateY(-50%);
+      bottom: 200px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
   }
+.slide-btn-close {
+    display: flex;
+    flex-direction: column!important;
+}
   .mySlides {
       display: flex;
       flex-direction: column-reverse;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
   }
   .modal .mySlides img {
       width: 100%!important;
@@ -372,29 +380,22 @@ hr{
 .myModal-close {
     position: relative;
     top: 20px;
-    margin: 0px 195px;
+    margin: 0 195px;
     height: 90%;
 }
   .myModal-close .close {
-      display: flex!important;
-      justify-content: flex-end!important;
+      display: flex;
+      justify-content: right;
       font-size: 50px;
       color: rgb(144, 28, 28);
       cursor: pointer;
-      left: 45px;
+      left: 43px;
       position: relative;
-      top: 45px;
   }
 /************responsive de l'index.html*************/
 @media screen and (max-width: 1116px) {
-    header img {
-        margin-left: 45px!important;
-    }
     header h1 {
         font-size: 30px;
-    }
-    main {
-        column-gap: 45px;
     }
 }
 @media screen and (max-width: 1046px) {
@@ -406,15 +407,15 @@ hr{
         font-size: 28px;
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 992px){
     main {
         column-gap: 50px;
     }
+    .myModal-close {
+        margin: 0 90px;
+    }
 }
 @media screen and (max-width: 920px) {
-    header img {
-        margin-left: 25px!important;
-    }
     main img {
         width: 180px;
         height: 180px;
@@ -424,9 +425,6 @@ hr{
     }
 }
 @media screen and (max-width: 820px) {
-    header img {
-        margin-left: 0!important;
-    }
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -521,15 +519,14 @@ hr{
 }
 
 /******responsive de mimi_keel.html**********/
-
 @media screen and (max-width: 1116px) {
     #premiere-partie {
         margin-left: 73px;
         margin-right: 73px;
     }
     #photograph {
-         margin-left: 0px;
-         margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 30px;
         column-gap: 30px!important;
         row-gap: 30px;
@@ -561,14 +558,14 @@ hr{
         font-size: 46px;
         color: #D3573C;
         font-family: 'DM Sans', sans-serif;
-         margin-bottom: 0px;
+        margin-bottom: 0;
         margin-top: 0;
         font-weight: 400;
         line-height: 83px;
     }
     .mimi-keel h3 {
         font-size: 24px;
-         margin-top: 0px;
+         margin-top: 0;
     }
     #premiere-partie {
         margin-left: 55px;
@@ -624,19 +621,7 @@ hr{
         font-size: 13px;
     }
 }
-@media screen and (max-width: 710px){
-    .images img {
-        width: 140px;
-        height: 140px;
-    }
-    .mimi-keel p {
-        font-size: 12px;
-    }
-    .mimi-keel h3 {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 705px){
+@media screen and (max-width: 700px){
     #premiere-partie{
         display: flex;
         flex-direction: column;
@@ -670,7 +655,18 @@ hr{
     }
     #photograph img {
         width: 100%;
-        height: 470px !important;
+    }
+    .myModal-close {
+        margin: 0 30px;
+    }
+    .next {
+        left: 17px;
+    }
+    .prev {
+        right: 17px;
+    }
+    .myModal-close .close {
+        left: 20px;
     }
 }
 @media screen and (max-width: 440px) {
@@ -693,7 +689,6 @@ hr{
     .selected {
         gap: 13px;
     }
-
 }
 @media screen and (max-width: 380px) {
     header img {
@@ -712,9 +707,6 @@ hr{
     }
     .mimi-keel h1 {
         font-size: 45px;
-    }
-    #photograph span {
-        font-size: 20px;
     }
     #photograph b {
         font-size: 20px;
