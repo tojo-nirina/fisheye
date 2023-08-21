@@ -38,3 +38,16 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+// const modale = document.getElementById("myModale");
+// const openModaleBtn = document.getElementById("openModaleBtn");
+// const closeModaleBtn = document.getElementsByClassName("close")[0];
+
+// openModaleBtn.addEventListener("click", () => {
+//     modale.style.display = "block";
+// })
+
+// closeModaleBtn.addEventListener("click", () => {
+//    modale.style.display = "none";
+// })
+
